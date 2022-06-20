@@ -119,7 +119,7 @@ sed -i 's/\/bin\/ash/\/usr\/bin\/zsh/g' package/base-files/files/etc/passwd
 
 git clone https://github.com/irino/softflowd.git 
 cd softflowd && aclocal && autoheader && automake --add-missing && autoconf
-apt-get update -y && apt-get  install -y libzmq3-dev  libpcap-dev 
+sudo apt-get update -y && sudo apt-get  install -y libzmq3-dev  libpcap-dev 
 ./configure --enable-ntopng
 
 

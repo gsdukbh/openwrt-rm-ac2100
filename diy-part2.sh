@@ -118,7 +118,7 @@ popd
 sed -i 's/\/bin\/ash/\/usr\/bin\/zsh/g' package/base-files/files/etc/passwd
 
 git clone https://github.com/irino/softflowd.git 
-aclocal && autoheader && automake --add-missing && autoconf
+cd softflowd && aclocal && autoheader && automake --add-missing && autoconf
 ./configure --enable-ntopng
 
 
